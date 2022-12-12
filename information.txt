@@ -1,0 +1,124 @@
+video-42
+npm init
+npm i express
+npm i mongoose(abstaction layer for connect with mongo db) for create a models
+
+
+===>install thanderclient (send request and get the response) (for Testing API)
+
+=========================================video-43=====================================
+
+===>put nodemodule in gitignore
+
+npm i -D nodemon
+//nodemon for connect with mongoDB
+
+express server boiler plate copy
+
+1)create a index.js (entry point of backend)
+
+Thanderclient send the request 
+
+=========================================video-44=====================================
+
+create a folder structure 
+create a folder models
+create a folder routes
+ 
+mongoose model
+
+create a database in mongodb
+we can create a collections 
+
+Create a model
+Notes.js
+User.js 
+
+
+Both have to use schema
+it is in-built schema given by the mongoose
+
+in Router folder 
+two files 
+auth.js
+notes.js
+
+auth.js we have to use router
+
+=====================================video-45==========================================
+localhost:3000/api/auth
+
+proper data have to be send 
+// password should not store in plan text
+
+userschema have to import
+
+how can we send the data in request body
+
+using thandrclient we have to create one request then it send to the server
+router.get('/',(req,res)=>{
+      res.send("hello")
+      console.log(req.body);
+})
+
+
+body
+{
+"name":"harry"
+}
+
+we have to use middleware
+app.use(express.json())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+npm i jsonwebtoken
+
+json webtoken
+1)for the verify the user 
+send the token
+
+use:provide secure communication between client and server
+
+==>authenicate a user 
+
+have to add email if there is a error then send the error message
+password cannot be blank for that exists()function
+
+Thandeline collection (endpoint login)
+create new request then send the login and password body
+
+Route 1 : Create a User
+Route 2: Logging a User
+Route 3: getUSer
+
+
+getuser= get user id
+
+send the request and get the auth token
+
+middleware is a function 
+
+=============================================video-51============================================
+
+
+Fecth all notes from data bases  (create end point of all notes)
+
+create route1 using get request
+
